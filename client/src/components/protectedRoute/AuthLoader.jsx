@@ -17,7 +17,7 @@ const AuthLoader = ({ children }) => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/v1/direct-login", {
+        const res = await axios.get("https://multiplayer-tik-tak-toe.onrender.com/api/v1/direct-login", {
           withCredentials: true,
         });
         setResponseData(res.data);
