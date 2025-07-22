@@ -12,7 +12,7 @@ export const SocketProvider = ({ children }) => {
   const socket = useMemo(() => {
     if (!token) return null; 
 
-    return io("http://localhost:3000", {
+    return io("https://multiplayer-tik-tak-toe.onrender.com", {
       withCredentials: true,
       auth: {
         token: token,
